@@ -3,8 +3,6 @@ layout: post
 title:  "[USACO] Shell Game"
 ---
 
-# [USACO] Shell Game
-
 문제: [Shell Game](http://www.usaco.org/index.php?page=viewproblem2&cpid=891)
 
 (내가 아는 선에서는) 이 문제를 풀기 위한 방법은 크게 두가지가 존재한다.
