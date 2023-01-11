@@ -121,6 +121,7 @@ int main() {
 아래는 위의 알고리즘을 구현한 소스코드이다.
 
 ```cpp
+# Shell Game Method 2 (Efficient)
 #include <bits/stdc++.h>
 
 using namespace std;
