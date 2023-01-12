@@ -1,6 +1,11 @@
 ---
-layout: post
+layout: single
 title:  "[USACO] Shell Game"
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
+categories:
+  - algorithm_ps
 ---
 
 문제: [Shell Game](http://www.usaco.org/index.php?page=viewproblem2&cpid=891)

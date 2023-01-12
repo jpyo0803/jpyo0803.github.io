@@ -10,3 +10,9 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+sidebar-category:
+  - title: "Stuff"
+    children:
+      - title: "Algorithm / PS"
+        url: "/algorithm_ps"
