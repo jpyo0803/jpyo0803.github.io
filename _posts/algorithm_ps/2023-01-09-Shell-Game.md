@@ -113,7 +113,7 @@ int main() {
 
 그리고 첫번째 방법을 설명하기 위해 사용했던 문제에서 주어진 예시 입력을 여기서도 동일하게 사용하겠다.
 
-![shell_game_img_1](../images/shell_game_img_1.png)
+![shell_game_img_1](/assets/image/algorithm_ps/shell_game_img_1.png)
 
 초기에 첫번째 조개껍질에는 빨간색, 두번째 조개껍질에는 초록색, 세번째 조개껍질에는 파란색을 각각 지정하고 시뮬레이션을 돌린 결과 
 
