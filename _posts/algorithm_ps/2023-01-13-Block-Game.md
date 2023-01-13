@@ -24,10 +24,12 @@ use_math: true
 또한 각 조합에서 최대 10개의 알파벳을 갖는 단어가 최대 N개 존재 할 수 있으니 문제를 풀기 위한 시간복잡도는 $O(2^N * 2 * 10 * N)\approx O(N*2^N)$이다. 
 
 예)
+```txt
 3
 fox box
 dog cat
 car bus
+```
 
 - Total 8 Possible combinations
     1. (fox, dog, car)
@@ -66,10 +68,12 @@ bbc와 bcc로 구성된 단어보드는 'b'의 경우 최대 2개, 'c'의 경우
 이를 확장시켜 만약 bbc와 bcc로 구성된 똑같은 단어보드가 3개 존재한다고 해보자.
 
 예)
+```txt
 3
 bbc bcc
 bbc bcc
 bbc bcc
+```
 
 만약 조합이 (bbc, bbc, bbc)라면 포함된 단어들을 모두 표현하기 위해 필요한 'b'는 6개 'c'는 3개이다. 반대로 조합 (bcc, bcc, bcc)의 경우에는 'b' 3개, 'c' 6개가 필요하다.
 
