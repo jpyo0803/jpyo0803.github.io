@@ -24,8 +24,11 @@ use_math: true
 그렇다면 각 파티션에 존재하는 소의 마리수는 아래의 조건을 만족하는 소들의 수를 세면된다.
 
 **Partition I**: $x>a \land y>b$
+
 **Partition II**: $x<a \land y>b$
+
 **Partition III**: $x<a \land y<b$
+
 **Partition IV**: $x>a \land y<b$
 
 문제에서 소들의 위치값 $x,y$는 항상 홀수값을 갖고 직선 울타리의 값 $a,b$는 항상 짝수임을 보장하므로 소의 좌표가 울타리 위에 겹치는 경우는 배제해도 된다.
