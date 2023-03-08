@@ -74,28 +74,27 @@ ex)
 
 이번에는 총 3번의 연산이 필요했다.
 
-각 케이스에 대해 표현한 **Comparison tree**는 아래와 같다.
+각 케이스에 대해 표현한 **Decision tree**는 아래와 같다.
 
 ![sorting lower bound img 1](/assets/image/algorithm_ps/sorting_lower_bound/sorting_lower_bound_img_1.png)
 
-우리는 각 결과값들이 Leaf node로서 Comparison tree에 위치한다는 것을 알 수 있다. 
+우리는 각 결과값들이 Leaf node로서 Decision tree에 표현하는 방식으로 나타낼 수 있다. 
 
 그리고 트리의 높이 $h$는 최대 필요한 비교 연산의 횟수임도 알 수 있다.
 
-그렇다면 $N$개의 숫자들이 존재할때 생성해낼 수 있는 순서의 경우의 수는 $N!$가지가 나옴을 알 수 있다. 각 경우는 Comparison tree에서 leaf node이다.
+그렇다면 $N$개의 숫자들이 존재할때 생성해낼 수 있는 순서의 경우의 수는 $N!$가지가 나옴을 알 수 있다. 각 경우는 Decision tree에서 leaf node이다.
 
-그리고 $N!$개의 leaf node들을 갖는 Comparision의 높이 $h$는 아래와 같이 표현할 수 있다.
+그리고 $N!$개의 leaf node들을 갖는 Decision tree의 높이 $h$는 아래와 같이 표현할 수 있다.
 
-$h=\log_2{N!} = \log_2{(1*2*3*...*N)}=\log_2{1}+\log_2{2}+...+\log_2{N}$
+$h = \log_2({N!}) = \log_2{(1*2*3*...*N)} = \log_2({1}) + \log_2({2})+...+ \log_2({N})$
 
 위의 가장 오른쪽에 있는 $N$개의 항 중에 앞에 $N/2$개의 항을 없애고 뒤에 $N/2$항을 $\log_2(N/2)$로 바꾸면 아래와 같은 식을 도출 할 수 있다.
 
 
-$h= \log_2(1)+...+\log_2(N)$
-$\geq\xcancel{\log_2(1)+...+\log_2(N/2)}+\overbrace{\log_2(N/2)+...+\log_2(N/2)}^{N/2}$
+$h= \log_2(1)+...+\log_2(N)$ $ \geq \xcancel{\log_2(1)+...+\log_2(N/2)}+\overbrace{\log_2(N/2)+...+\log_2(N/2)}^{N/2}$
 $=(N/2)\log_{2}{(N/2)}$
 
-이를 통해 Comparison tree의 높이는 적어도 $(N/2)\log_2(N/2)$을 보일 수 있다. 여기서 트리의 높이는 $N$개의 숫자들을 정렬하기 위해 필요한 비교 연산의 횟수이다.
+이를 통해 Decision tree의 높이는 적어도 $(N/2)\log_2(N/2)$을 보일 수 있다. 여기서 트리의 높이는 $N$개의 숫자들을 정렬하기 위해 필요한 비교 연산의 횟수이다.
 
-**즉, 비교기반 정렬 알고리즘의 시간복잡도는 $O(N\log_2{N})$이 최적임을 확인 할 수 있다.**
+**즉, 비교기반 정렬 알고리즘의 시간복잡도는 $\Omega(N\log_2{N})$이 최적임을 확인 할 수 있다.**
 
