@@ -44,13 +44,14 @@ for (int i = 0; i < N - 1; ++i) {
 예를 들어 주어진 입력이 아래와 같다면 
 ex)
 MIAMI1 FL
+
 MIAMI2 FL
 
 "FL" state에 "MI"로 시작하는 도시의 개수는 2개이다.
 
 이 전처리 과정은 map 자료구조를 통해 구현하면 효율적으로 search를 할 수 있다. 
 
-C++의 STL에서 제공하는 std::map의 경우 RB tree기반이기 때문에 search의 시간복잡도가 $O(N \log_2 {N})$이고 std::unordered_map의 경우 Hash기반이기 때문에 search 시간복잡도는 $O(\alpha *N )$이나 constant factor인 $\alpha$가 매우 클수도 있어서 상황에따라 Time limit exceed verdict를 받을 수 있기에 사용을 추천하지는 않는다고 한다.
+C++의 STL에서 제공하는 std::map의 경우 RB tree기반이기 때문에 search의 시간복잡도가 $O(N \log_2 {N})$이고 std::unordered_map의 경우 Hash기반이기 때문에 search 시간복잡도는 $O(\alpha \cdot 1 )$이나 constant factor인 $\alpha$가 매우 클수도 있어서 상황에따라 Time limit exceed verdict를 받을 수 있기에 사용을 추천하지는 않는다고 한다.
 
 전처리 과정을 마친 후 각 pair에 대해 special pair를 만들어내는 개수를 각각 누계한다. 
 
