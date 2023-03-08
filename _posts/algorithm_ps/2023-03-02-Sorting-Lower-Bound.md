@@ -16,6 +16,7 @@ Lower bound of comparison based sorting algorithms
 Big-O 시간복잡도를 기준으로 비교기반 정렬 알고리즘들을 분류하자면
 
 $O(N^2)$: Bubble sort, Insertion sort, Selection sort, Quick sort, ...
+
 $O(N\log_2N)$: Merge sort, Heap sort
 
 그렇다면 $O(N\log_2N)$ 시간복잡도보다 효율적인 비교기반 정렬 알고리즘은 존재하지 않는 것일까?
@@ -86,13 +87,13 @@ ex)
 
 그리고 $N!$개의 leaf node들을 갖는 Decision tree의 높이 $h$는 아래와 같이 표현할 수 있다.
 
-$h = \log_2({N!}) = \log_2{(1*2*3*...*N)} = \log_2({1}) + \log_2({2})+...+ \log_2({N})$
+$h = \log_2({N!}) = \log_2{(1 \cdot 2 \cdot 3 \cdot ... \cdot N)} = \log_2({1}) + \log_2({2})+...+ \log_2({N})$
 
 위의 가장 오른쪽에 있는 $N$개의 항 중에 앞에 $N/2$개의 항을 없애고 뒤에 $N/2$항을 $\log_2(N/2)$로 바꾸면 아래와 같은 식을 도출 할 수 있다.
 
 
-$h= \log_2(1)+...+\log_2(N)$ $ \geq \xcancel{\log_2(1)+...+\log_2(N/2)}+\overbrace{\log_2(N/2)+...+\log_2(N/2)}^{N/2}$
-$=(N/2)\log_{2}{(N/2)}$
+$h= \log_2(1) + ... + \log_2(N) \geq \cancel{ \log_2(1) + ... + \log_2(N/2)} + \overbrace{ \log_2(N/2) + ... + \log_2(N/2)}^{N/2}$
+$=(N/2) \log_{2}{(N/2)}$
 
 이를 통해 Decision tree의 높이는 적어도 $(N/2)\log_2(N/2)$을 보일 수 있다. 여기서 트리의 높이는 $N$개의 숫자들을 정렬하기 위해 필요한 비교 연산의 횟수이다.
 
