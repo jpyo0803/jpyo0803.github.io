@@ -13,6 +13,9 @@ main:
 
 sidebar-category:
   - title: "Stuff"
+    url: "/stuff/"
     children:
       - title: "Algorithm / PS"
-        url: "/algorithm_ps"
+        url: "/stuff/algorithm_ps/"
+      - title: "Math for CS"
+        url: "/stuff/math_for_cs/"
