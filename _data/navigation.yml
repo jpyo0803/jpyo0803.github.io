@@ -19,3 +19,5 @@ sidebar-category:
         url: "/stuff/algorithm_ps/"
       - title: "Math for CS"
         url: "/stuff/math_for_cs/"
+      - title: "Modern C++"
+        url: "/stuff/modern_cpp/"
