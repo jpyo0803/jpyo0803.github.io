@@ -5,13 +5,13 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
 문제: [Stuck in A Rut (Bronze)](http://www.usaco.org/index.php?page=viewproblem2&cpid=1061)
 
-![stuck in a rut img 1](/assets/image/algorithm_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_1.png)
+![stuck in a rut img 1](/assets/image/alg_ds_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_1.png)
 $nc = cow\ moving\ north\ (+y)$\
 $ec = cow\ moving\ east\ (+x)$
 
@@ -42,7 +42,7 @@ $N= the\ number\ of\ cows$
 
 그렇다면 한번에 얼마나 많이 전진 시키는 것이 문제를 현실적인 시간내에 풀 수 있을까? 만약 최소 한마리의 소가 또 다른 소에 의해 정지가 가능한 상황이라면 현재 상황에서 정지하기까지 최소의 거리를 필요하는 소를 찾고 그 최소 거리를 이번 시뮬레이션에서 어떤 소가 전진해야하는 거리로 사용하면 된다.
 
-![stuck in a rut img 2](/assets/image/algorithm_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_2.png)
+![stuck in a rut img 2](/assets/image/alg_ds_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_2.png)
 
 위의 다이어그램에서 선택된 (빨간 타원) 경우를 보면 동쪽으로 전진하는 소가 북쪽으로 전진하는 소에 의해 정지 당하기까지 거리 2만큼이 필요한 경우이다. (최소 거리)
 
@@ -62,12 +62,12 @@ Approach 1에서는 최악의 경우 $max(x,y)$ 번의 시뮬레이션이 필요
 
 #### Case 1: $B.y \leq A.y$ (A는 B에 의해 정지하지 못함)
 
-![stuck in a rut img 3](/assets/image/algorithm_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_3.png)
+![stuck in a rut img 3](/assets/image/alg_ds_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_3.png)
 만약 $B.y < A.y$ 라면 소 B는 소 A를 어떠한 경우에도 정지 시키지 못한다.
 
 위 상황은 $B.y$ (소 B의 $y$ 위치)가 $A.y$ (소 A의 $y$ 위치)보다 같거나 아래에 위치할때이다. 
 
-![stuck in a rut img 4](/assets/image/algorithm_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_4.png)
+![stuck in a rut img 4](/assets/image/alg_ds_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_4.png)
 
 위 상황은 $B.y$의 위치가 $A.y$의 위치가 같은 경우이다. 
 
@@ -80,7 +80,7 @@ Approach 1에서는 최악의 경우 $max(x,y)$ 번의 시뮬레이션이 필요
 
 #### Case 2 (B가 아직 이동중이라면 A를 정지할 수 있음)
 
-![stuck in a rut img 5](/assets/image/algorithm_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_5.png)
+![stuck in a rut img 5](/assets/image/alg_ds_ps/stuck_in_a_rut_bronze/stuck_in_a_rut_bronze_img_5.png)
 
 아직 소 B가 소 A위를 지나지 않았고 아직 움직이는 상황이라면 소 B가 노란색 삼각형으로 표현된 영역안에 있어야 추후에 소 A를 정지시킬 수 있다.
 

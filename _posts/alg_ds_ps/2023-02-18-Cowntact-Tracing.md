@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 

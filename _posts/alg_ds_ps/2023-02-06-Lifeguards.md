@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -25,20 +25,20 @@ use_math: true
 1차원 Line Sweep 알고리즘을 우리의 문제에 적용하기 위해서는 커버 영역의 시작점을 기준으로 오름차순으로 정렬한다. 그리고 정렬된 순서로 앞에서부터 하나씩 처리한다.
 
 #### Case 1 ($t_{c}<t_{b}\ \land\ t_{b} < t_{d}$)
-![lifeguards img 1](/assets/image/algorithm_ps/lifeguards_bronze/lifeguards_img_1.png)
+![lifeguards img 1](/assets/image/alg_ds_ps/lifeguards_bronze/lifeguards_img_1.png)
 만약 위의 Case 1에서의 조건을 따른다면 구간 [t_{a},t_{b}]는 이미 처리되었고 구간 [t_{c},t_{b}]는 중복구간 [t_{a},t_{b}]와 중복되기 때문에 스킵한다. 그리고 구간 [t_{b},t_{d}]는 따로 더해준다. 즉, 앞에서부터 커버 영역을 구하면 
 
 $coverage = [t_{a}, t_{b}] + [t_{b}, t_{d}]$
 
 #### Case 2 ($t_{a}<t_{c}\ \land\ t_{d} < t_{b}$)
-![lifeguards img 2](/assets/image/algorithm_ps/lifeguards_bronze/lifeguards_img_2.png)
+![lifeguards img 2](/assets/image/alg_ds_ps/lifeguards_bronze/lifeguards_img_2.png)
 
 단순하게 구간 $[t_{c},t_{d}]$는 무시된다.
 
 $coverage = [t_{a}, t_{b}]$
 
 #### Case 3 ($t_{b}<t_{c}$)
-![lifeguards img 3](/assets/image/algorithm_ps/lifeguards_bronze/lifeguards_img_3.png)
+![lifeguards img 3](/assets/image/alg_ds_ps/lifeguards_bronze/lifeguards_img_3.png)
 
 이번에도 단순하다. 그냥 둘을 따로 계산하면 된다.
 

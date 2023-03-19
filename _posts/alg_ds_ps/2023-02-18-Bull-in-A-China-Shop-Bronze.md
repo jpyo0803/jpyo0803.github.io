@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -16,18 +16,18 @@ use_math: true
 ### Approach 1
 단순하게 어떤 두 개의 조각을 고르고 하나의 조각은 고정(아래 그림에서는 파란색 정사각형으로 표현 조각)시켜놓은 상태에서 다른 조각을 2차원 평면상에서 아래처럼 슬라이딩(빨간색 정사각현으로 표현한 조각)시켜가면서 이게 원본의 조각과 같은지 확인하는 작업을 해보면 된다. 
 
-![bull in a china shop img 1](/assets/image/algorithm_ps/bull_in_a_china_shop_bronze/bull_in_a_china_shop_bronze_img_1.png)
+![bull in a china shop img 1](/assets/image/alg_ds_ps/bull_in_a_china_shop_bronze/bull_in_a_china_shop_bronze_img_1.png)
 위에 상황에서는 아직 오른쪽으로 이동하는 것이 의미가 있기때문에 오른쪽으로 슬라이딩
 
-![bull in a china shop img 2](/assets/image/algorithm_ps/bull_in_a_china_shop_bronze/bull_in_a_china_shop_bronze_img_2.png)
+![bull in a china shop img 2](/assets/image/alg_ds_ps/bull_in_a_china_shop_bronze/bull_in_a_china_shop_bronze_img_2.png)
 위에 상황에서는 더이상 오른쪽으로 이동이 의미가 없기에 다음 행의 첫번째 열로 이동.
 
-![bull in a china shop img 3](/assets/image/algorithm_ps/bull_in_a_china_shop_bronze/bull_in_a_china_shop_bronze_img_3.png)
+![bull in a china shop img 3](/assets/image/alg_ds_ps/bull_in_a_china_shop_bronze/bull_in_a_china_shop_bronze_img_3.png)
 위에 상황에서 원본 피규어와 같은 상황에 드디어 맞닥들이게 됨.
 
 그렇다면 어떻게 고정된 조각과 슬라이딩되어지는 조각이 원본과 같은지 판별해낼까?
 
-![bull in a china shop img 4](/assets/image/algorithm_ps/bull_in_a_china_shop_bronze/bull_in_a_china_shop_bronze_img_4.png)
+![bull in a china shop img 4](/assets/image/alg_ds_ps/bull_in_a_china_shop_bronze/bull_in_a_china_shop_bronze_img_4.png)
 
 위의 그림에서처럼 임의로 기준점을 잡는다 (우리의 경우 가장 왼쪽 위에 있는 실제 조각의 부분 #)을 기준으로 잡았다. 
 

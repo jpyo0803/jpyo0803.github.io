@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -19,7 +19,7 @@ use_math: true
 
 주어진 테스트케이스를 이해를 돕기위해 활용해보자.
 
-![contamilted milk img 1](/assets/image/algorithm_ps/contaminated_milk_bronze/contaminated_milk_bronze_img_1.png)
+![contamilted milk img 1](/assets/image/alg_ds_ps/contaminated_milk_bronze/contaminated_milk_bronze_img_1.png)
 
 주어진 정보에서는 총 2명이 결국 아프게 되었고 이는 빨간색 화살표로 표시하였다.
 먼저 **Person 1**이 시간 $t=3$에서 아프게 되었는데 이는 Person 1을 아프게 할 수 있는 상한 우유들은 아프기 이전에 마신 1, 2, 4번 우유라는 것을 알 수 있다. 

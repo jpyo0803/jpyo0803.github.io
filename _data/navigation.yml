@@ -15,8 +15,8 @@ sidebar-category:
   - title: "Stuff"
     url: "/stuff/"
     children:
-      - title: "Algorithm / PS"
-        url: "/stuff/algorithm_ps/"
+      - title: "Algo / DS / PS"
+        url: "/stuff/alg_ds_ps/"
       - title: "Math for CS"
         url: "/stuff/math_for_cs/"
       - title: "Modern C++"

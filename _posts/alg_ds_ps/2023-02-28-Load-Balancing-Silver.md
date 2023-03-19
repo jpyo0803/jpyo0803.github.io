@@ -5,13 +5,13 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
 문제: [Load Balancing (Silver)](http://www.usaco.org/index.php?page=viewproblem2&cpid=619)
 
-[이전 포스트](https://jpyo0803.github.io/algorithm_ps/Load-Balancing-Bronze/)에 [Load balancing (Bronze 레벨)](http://www.usaco.org/index.php?page=viewproblem2&cpid=617)에서는 $N (1\leq N \leq 100)$이므로 시간복잡도가 $O(N^3)$임에도 불구하고 제한시간내에 충분히 해결가능했다.
+[이전 포스트](https://jpyo0803.github.io/alg_ds_ps/Load-Balancing-Bronze/)에 [Load balancing (Bronze 레벨)](http://www.usaco.org/index.php?page=viewproblem2&cpid=617)에서는 $N (1\leq N \leq 100)$이므로 시간복잡도가 $O(N^3)$임에도 불구하고 제한시간내에 충분히 해결가능했다.
 
 하지만 Silver 레벨에서는 $N (1 \leq N \leq 1000)$이므로 이전의 알고리즘으로는 **TLE**로 인해 실패하게 된다.
 
@@ -31,11 +31,11 @@ use_math: true
 사실 **Part 1**과 **Part 2**에서 더 줄일 수 있는지는 모르겠으나 **Part 3**는 각 케이스마다 $x=a$와 $y=b$가 정해질때마다 매번 새로 수행할 필요는 없어보인다. 
 
 
-![load balancing img 1](/assets/image/algorithm_ps/load_balancing_silver/load_balancing_silver_img_1.png)
+![load balancing img 1](/assets/image/alg_ds_ps/load_balancing_silver/load_balancing_silver_img_1.png)
 
 예를들어 위에 그림에서처럼 $x=a$가 고정된 상태에서 $y=b$가 다음 후보위치로 이동했다고 해보자. 
 
-![load balancing img 2](/assets/image/algorithm_ps/load_balancing_silver/load_balancing_silver_img_2.png)
+![load balancing img 2](/assets/image/alg_ds_ps/load_balancing_silver/load_balancing_silver_img_2.png)
 그럼 위에서 화살표로 표시된 소가 속한 그룹이 **I**에서 **IV**로 변경된 것을 확인 할 수 있다. 
 
 즉, 어떤 소가 현재 $x=a$의 값을 기준으로 왼쪽에 있으면 **II**에서 **III**으로 이동시키고 오른쪽에 있으면 **I**에서 **IV**로 이동시키면 된다.

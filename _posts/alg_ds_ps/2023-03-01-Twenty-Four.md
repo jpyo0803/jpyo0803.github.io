@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -19,18 +19,18 @@ $C (1 \leq C \leq 13)$의 범위를 갖는 숫자 4개가 주어졌을때 연산
 ### Approach 1
 모든 경우의 수를 검사하기 앞서 숫자들의 순열과 연산자들의 종류가 이미 정해졌다고 했을때 계산하는 방법에 대해서 먼저 알아보면 좋을 것 같다.
 
-![twenty four img 1](/assets/image/algorithm_ps/twenty_four/twenty_four_img_1.png)
+![twenty four img 1](/assets/image/alg_ds_ps/twenty_four/twenty_four_img_1.png)
 위 그림을 보면 각 숫자들은 앞에서부터 $a$,$b$,$c$,$d$로 표시했고 숫자 사이의 연산자들은 물음표를 포함한 정사각형 박스로 표현하였다. 
 
 숫자 4개의 위치와 연산자 3개의 종류가 이미 정해진 상태에서 앞에서부터 순서대로 계산하지 않아도 된다고하면 가능한 다른 계산 방법은 아래에서 처럼 2가지 Model만 존재하는 것을 확인 할 수 있다.
 
-![twenty four img 2](/assets/image/algorithm_ps/twenty_four/twenty_four_img_2.png)
+![twenty four img 2](/assets/image/alg_ds_ps/twenty_four/twenty_four_img_2.png)
 
 이제 모든 가능한 경우의 수를 생성해야 한다.
 
 먼저 숫자 $a$,$b$,$c$,$d$로 이루어진 순열을 통해 나가면서 숫자들의 가능한 모든 배치 경우의 수를 아래처럼 생성한다. 이때 시간복잡도는 $O(N!)$이나 숫자가 4개뿐이므로 총 경우의 수는 24이다.
 
-![twenty four img 3](/assets/image/algorithm_ps/twenty_four/twenty_four_img_3.png)
+![twenty four img 3](/assets/image/alg_ds_ps/twenty_four/twenty_four_img_3.png)
 
 아래 코드는 숫자 4개의 순열을 next_permutation을 활용해 생성하는 예
 ```cpp
@@ -53,7 +53,7 @@ int main() {
 
 생성된 각 순자들의 순서 순열마다 연산자들을 정한다. 이때 시간복잡도는 $O(4^N)$이나 결정해야되는 연산자들의 개수는 3개뿐이므로 총 경우의 수는 64.
 
-![twenty four img 4](/assets/image/algorithm_ps/twenty_four/twenty_four_img_4.png)
+![twenty four img 4](/assets/image/alg_ds_ps/twenty_four/twenty_four_img_4.png)
 
 아래 코드는 연산자들을 각각
 

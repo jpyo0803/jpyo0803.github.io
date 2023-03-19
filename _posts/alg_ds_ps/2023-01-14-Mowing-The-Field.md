@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -21,7 +21,7 @@ use_math: true
 우리가 이 문제에서 해결하고자 하는 것은 최소의 잔디 성장 속도를 찾는 것이다. 
 이 문제를 풀기 위해 우리는 어떤 장소에 재방문하였을때 저번에 방문하였을때의 시간을 알수있어야 한다. 
  
-![mowing_the_field_img_1](/assets/image/algorithm_ps/mowing_the_field_img_1.png)
+![mowing_the_field_img_1](/assets/image/alg_ds_ps/mowing_the_field_img_1.png)
 위 예지를 통해 만약 어떤 cell에 대해 지난번 방문한 시간 $x$를 알고 있다면 현재시간 $y$에 $x$를 빼는 방식으로 재방문까지 걸린 시간을 계산할 수 있다.
 
 이는 들판의 각 단위 cell에 타임스탬프를 기록해둘 수 있는 저장공간을 두어 어떤 cell에 재방문시 재방문까지 걸린 시간을 계산해낼 수 있다. 
@@ -40,7 +40,7 @@ use_math: true
 
 이는 꽤 간단하게 구할 수 있다. 재방문까지 걸리는 시간들 중 가장 긴 시간을 구하면 된다.
 
-![mowing_the_field_img_2](/assets/image/algorithm_ps/mowing_the_field_img_2.png)
+![mowing_the_field_img_2](/assets/image/alg_ds_ps/mowing_the_field_img_2.png)
 
 위의 논리를 정당화해보자. 
 

@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -17,7 +17,7 @@ use_math: true
 
 문제에서 요구하는 답을 구하기 위해서는 울타리가 이미 설치된 상태에서 각 파티션에 존재하는 소의 마리수를 셀수있어야한다. 세는 방법은 간단하다.
 
-![load balancing img 1](/assets/image/algorithm_ps/load_balancing_bronze/load_balancing_img_1.png)
+![load balancing img 1](/assets/image/alg_ds_ps/load_balancing_bronze/load_balancing_img_1.png)
 
 먼저 어떤 소의 위치를 $P(x,y)$라고 하자.
 
@@ -65,10 +65,10 @@ for (int a = 1; a <= 99; a += 2) {
 
 상황을 간단하게 하기 위해 $x=a$으로 표현되는 직선 울타리만 고려해보자.
 
-![load balancing img 2](/assets/image/algorithm_ps/load_balancing_bronze/load_balancing_img_2.png)
+![load balancing img 2](/assets/image/alg_ds_ps/load_balancing_bronze/load_balancing_img_2.png)
 위에서 그림은 Approach 1에서의 방식을 그대로 보여준다. 소 A와 소 B의 사이에서 직선 울타리가 가질 수 있는 모든 경우를 검사한다. 굳이 다 검사할 필요가 있을까?
 
-![load balancing img 3](/assets/image/algorithm_ps/load_balancing_bronze/load_balancing_img_3.png)
+![load balancing img 3](/assets/image/alg_ds_ps/load_balancing_bronze/load_balancing_img_3.png)
 모든 경우를 다 검사하는 것은 시간낭비이다. 소A와 소B 사이의 $x=a$값하나만 검사해보면 된다. (여기서는 평균값을 사용했으나 굳이 그럴필요는 없다.)
 
 그렇다면 소의 마리수는 $N$은 최대 100이고 100마리로 만들수 있는 사이값들은 총 99개가 가능하다. 이를 $x,y$축 모두에 대해 확장시키면 시간복잡되는 $O(N^2)$이된다. 검사 알고리즘까지 포함하면 $O(N^3)$이다. 즉, 제한시간내에 문제를 충분히 풀수있는 알고리즘이다.

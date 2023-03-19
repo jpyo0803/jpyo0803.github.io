@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -31,12 +31,12 @@ Plain Cow 3:  A C T T C C A ... T
 이 문제를 풀기 위한 아이디어는 간단하다. 어떤 position에서 Spotty 소들과 Plain 소들이 각각 포함하고 있는 문자들이 겹치지 않는다면 해당 position은 어떠한 문자가 주어져도 이 문자를 포함하는 소가 Spotty인지 Plain인지 구분가능하다.
 
 #### 구분가능한 Case (Spotty/Plain 그룹간 겹치는 문자가 없음)
-![bovine genomics img 1](/assets/image/algorithm_ps/bovine_genomics/bovine_genomics_img_1.png)
+![bovine genomics img 1](/assets/image/alg_ds_ps/bovine_genomics/bovine_genomics_img_1.png)
 이 케이스에서는 문자 C가 주어지면 우리는 해당 문자를 DNA Sequence에 포함한 소가 Spotty함을 알 수 있다. 반면에 주어진 문자가 G라면 이는 Plain한 소임을 의미한다. 
 만약 양쪽에 모두 포함되지 않은 문자 T가 주어지면 문제 설명에서 처럼 무시해도 된다.
 
 #### 구분 불가능한 Case (Spotty/Plain 그룹간 겹치는 문자가 존재)
-![bovine genomics img 1](/assets/image/algorithm_ps/bovine_genomics/bovine_genomics_img_2.png)
+![bovine genomics img 1](/assets/image/alg_ds_ps/bovine_genomics/bovine_genomics_img_2.png)
 
 이번에는 문자 C가 양쪽 그룹에 모두 포함되어 있다. 만약 문자 C가 주어진다면 해당 문자를 포함하는 소가 Spotty인지 Plain인지 분류가 불가능한 상황이 생긴다. 즉, 항상 구분할수 없다.
 

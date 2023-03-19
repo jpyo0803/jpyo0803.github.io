@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -22,7 +22,7 @@ use_math: true
 
 이해를 돕기 위해 간단한 예를 들어보자,
 
-!["measuring_traffic_img_1"](/assets/image/algorithm_ps/measuring_traffic_img_1.png)
+!["measuring_traffic_img_1"](/assets/image/alg_ds_ps/measuring_traffic_img_1.png)
 
 위 그림에서 검은 선으로 표시된 도로는 주도로(main road)이다. 빨간색으로 표시된 도로는 "on-ramp" 도로이다. 파란색으로 표시된 도로는 "off-ramp"이다. 앞서에서의 가정처럼 차량의 흐름이 가로로된 도로의 오른쪽 방향이라고 하자. 
 
@@ -45,7 +45,7 @@ use_math: true
 - 사실3: 새롭게 주어진 주도로의 **최소 / 최대** 통행량 정보를 지금까지의 **최소 / 최대** 통행량 정보와 종합해 주도로의 **최소 / 최대** 통행량 범위를 최소화한다.
 
 ### 주도로의 통행량이 알려지기전에 on-ramp나 off-ramp가 존재한다면?
-!["measuring_traffic_img_2"](/assets/image/algorithm_ps/measuring_traffic_img_2.png)
+!["measuring_traffic_img_2"](/assets/image/alg_ds_ps/measuring_traffic_img_2.png)
 위 예제에서 t1 시점 이전의 통행량이 알려져있지 않은 상태에서 10~50대의 차량이 on-ramp에서 진입을 한다고해도 t2 직후의 통행량을 알아낼 수 없을 것이다. 즉, t3에 도달해야만 주도로의 통행량을 알 수 있다. 다시말해 주도로의 통행량이 알려지지 않은 상태에서 on-ramp에서의 진입 통행량 정보는 사실상 사용되지 않는다. 이러한 사실은 off-ramp의 경우에도 똑같이 적용된다.
 
 - 사실4: 주도로의 통행량 범위가 주어지지 않은 상태에서 on-ramp와 off-ramp의 통행량은 결과값에 영향을 주지 못한다. 

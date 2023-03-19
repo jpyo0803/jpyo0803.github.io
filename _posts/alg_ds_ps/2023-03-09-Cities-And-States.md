@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -16,7 +16,7 @@ $N (1 \leq N \leq 200000)$개의 city와 state pair가 주어진다.
 어떠한 순서쌍들은 아래의 예시에서 처럼 특정조건을 만족하면 special pair라고 부른다.
 
 ex)
-![cities and states silver img 1](/assets/image/algorithm_ps/cities_and_states_silver/cities_and_states_silver_img_1.png)
+![cities and states silver img 1](/assets/image/alg_ds_ps/cities_and_states_silver/cities_and_states_silver_img_1.png)
 
 
 ### Approach 1 (Naive)

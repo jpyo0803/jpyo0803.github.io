@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -36,13 +36,13 @@ $O(100*100) = O(10000)$.
 
 질문을 해도 동물들이 후보군에서 탈락하지 않고 유지되는 경우는 언제일까? 이 상황은 어떤 동물들이 질문으로 사용한 특성을 공유하는 경우이다.
 
-![guess the animal img 1](/assets/image/algorithm_ps/guess_the_animal/guess_the_animal_img_1.png)
+![guess the animal img 1](/assets/image/alg_ds_ps/guess_the_animal/guess_the_animal_img_1.png)
 예를들어 위에서처럼 어떤 두 동물(여기서는 Cat과 Dog)이 공유하지 않는 특성인 "bark"을 질문으로 한다면 아래처럼 둘 중하나는 후보군에서 탈락하게 된다.
 
-![guess the animal img 2](/assets/image/algorithm_ps/guess_the_animal/guess_the_animal_img_2.png)
+![guess the animal img 2](/assets/image/alg_ds_ps/guess_the_animal/guess_the_animal_img_2.png)
 반면에 위에서처럼 어떤 두 동물이 공유하는 특성을 질문으로하면 둘다 생존하게 된다.
 
-![guess the animal img 3](/assets/image/algorithm_ps/guess_the_animal/guess_the_animal_img_3.png)
+![guess the animal img 3](/assets/image/alg_ds_ps/guess_the_animal/guess_the_animal_img_3.png)
 즉, 최대한 많은 질문을 하고 싶다면 위에서처럼 공유되는 특성들부터 먼저 물어보고 더 이상 공유되는 질문이 존재하지 않게될때 어떤 동물에 고유한 특성을 질문으로하여 최종적으로 한 마리의 동물만 남게하여 알고리즘을 종료한다. 
 
 그렇다면 위에 예시들에서처럼 2마리가 아닌 더 많은 동물들이 존재한다면 어떤 과정을 통해 최대한 많은 질문들을 하면서 최종적으로 한 마리의 동물만 남길 수 있을까?
@@ -58,7 +58,7 @@ $answer=max({candidate_{1}, candidate_{2}, ..., candidate_{N*(N-1)/2}})$
 ### 왜 pair
 그렇다면 왜 가능한 모든 부분집합(subset) 대신에 모든 순서쌍(pair)만 검사해도 올바른 정답을 구해낼수있는 것인가?
 
-![guess the animal img 4](/assets/image/algorithm_ps/guess_the_animal/guess_the_animal_img_4.png)
+![guess the animal img 4](/assets/image/alg_ds_ps/guess_the_animal/guess_the_animal_img_4.png)
 위 예시를 보면 Dog를 기준으로하고 Cat을 비교대상으로 선정했을때 특성 "D"를 질문하는 경우와 동일하게 Dog를 기준으로하고 이번에는 Owl을 비교대상으로 선정하고 특성 "D"를 질문하는 경우가 결과적으로는 동일함을 알 수 있다. 
 
 즉, Dog, Cat, 그리고 Owl 모두를 포함한 부분집합인 상황을 고려하는 것과 같은 결과를 보인다. 물론 부분집합으로 보고 처리했을때 한번만 계산해 보아도 되는 케이스를 순서쌍을 기준으로 계산한다면 똑같은 결과를 두번 마주치게 된다.

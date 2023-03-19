@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -77,7 +77,7 @@ ex)
 
 각 케이스에 대해 표현한 **Decision tree**는 아래와 같다.
 
-![sorting lower bound img 1](/assets/image/algorithm_ps/sorting_lower_bound/sorting_lower_bound_img_1.png)
+![sorting lower bound img 1](/assets/image/alg_ds_ps/sorting_lower_bound/sorting_lower_bound_img_1.png)
 
 우리는 각 결과값들이 Leaf node로서 Decision tree에 표현하는 방식으로 나타낼 수 있다. 
 

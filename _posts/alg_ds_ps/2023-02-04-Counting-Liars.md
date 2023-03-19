@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -30,7 +30,7 @@ Bessie 위치를 0부터 $10^9$까지 1씩 증가시켜 가정하는 방식대�
 결론부터 말하자면 거짓말 하는 소의 마리수를 최소화하는게 목표이고 L과 G가 부등식을 의미하기에 문제가 되지 않는다. 
 
 
-![counting liars img 1](/assets/image/algorithm_ps/counting_liars/counting_liars_img_1.png)
+![counting liars img 1](/assets/image/alg_ds_ps/counting_liars/counting_liars_img_1.png)
 예를들어 위 그림에서처럼 어떤 소가 Bessie의 방향과 위치가 각각 G와 100이라고 주장했다고 해보자. 이는 Bessie의 위치가 100과 같거나 크다고 주장하는 것이다. 즉, Bessie의 위치가 100이라면 진실을 말하게 되는 것이므로 거짓 주장의 갯수 증가에 기여하지 않는다. 
 
 #### Implementation 

@@ -5,7 +5,7 @@ author_profile: true
 sidebar:
     nav: "sidebar-category"
 categories:
-  - algorithm_ps
+  - alg_ds_ps
 use_math: true
 ---
 
@@ -21,13 +21,13 @@ use_math: true
 각 상황별로 소들이 인접하기 위치하기 위해 필요한 최소 이동횟수를 직접 구해보았다.
 
 ###### Case 1 (소들이 이미 인접한 상황)
-![sleepy cow herding bronze img 1](/assets/image/algorithm_ps/sleepy_cow_herding_bronze/sleepy_cow_herding_bronze_img_1.png)
+![sleepy cow herding bronze img 1](/assets/image/alg_ds_ps/sleepy_cow_herding_bronze/sleepy_cow_herding_bronze_img_1.png)
 위의 상황을보면 어떤 소도 더 이상 이동할 필요가 없음을 확인 할 수 있다.
 
 즉 위의 상황에서 최소 이동 횟수는 **0회**이다.
 
 ##### Case 2 (소들 사이의 거리가 1이 존재할때)
-![sleepy cow herding bronze img 2](/assets/image/algorithm_ps/sleepy_cow_herding_bronze/sleepy_cow_herding_bronze_img_2.png)
+![sleepy cow herding bronze img 2](/assets/image/alg_ds_ps/sleepy_cow_herding_bronze/sleepy_cow_herding_bronze_img_2.png)
 
 위의 상황들을 예시로 보면 소들 사이의 거리가 1일때가 있는 경우를 보여준다. 
 
@@ -40,7 +40,7 @@ use_math: true
 위의 모든 상황에서 필요한 최소 이동 횟수는 **1회**이다.
 
 ##### Case 3 (그 외의 상황)
-![sleepy cow herding bronze img 3](/assets/image/algorithm_ps/sleepy_cow_herding_bronze/sleepy_cow_herding_bronze_img_3.png)
+![sleepy cow herding bronze img 3](/assets/image/alg_ds_ps/sleepy_cow_herding_bronze/sleepy_cow_herding_bronze_img_3.png)
 
 그 외의 상황은 가장자리에 있는 소를 적절하게 움직여 **Case 2**의 상황으로 만들어준다. 
 
@@ -55,7 +55,7 @@ use_math: true
 ### 최대 이동 횟수 구하기
 소들을 최대한 많이 이동시켜 인접하게 만드는 방법은 가장자리에 있는 두 마리의 소들중 한마리를 골라 고정시키고 나머지 소들을 번갈아가며 한칸씩 고정되어있는 소쪽으로 점진적으로 이동시킨다. 
 
-![sleepy cow herding bronze img 4](/assets/image/algorithm_ps/sleepy_cow_herding_bronze/sleepy_cow_herding_bronze_img_4.png)
+![sleepy cow herding bronze img 4](/assets/image/alg_ds_ps/sleepy_cow_herding_bronze/sleepy_cow_herding_bronze_img_4.png)
 
 위의 예시에서는 오른쪽 소를 고정시키고 왼쪽과 중간소를 번갈아가며 이동시켜 결국에는 세 마리 소들이 인접하게 하였다. 이 과정중에 필요한 이동 횟수는 $d2$번이다. 
 
