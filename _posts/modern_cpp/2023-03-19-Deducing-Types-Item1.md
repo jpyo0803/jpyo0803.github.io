@@ -200,3 +200,46 @@ f(99);
 // T is deduced to be 'int', ParamType to be 'int&&'
 
 ```
+
+#### Case 3: ParamType이 Pointer도 Reference도 아닐때
+
+- Rules
+  1. **expr**가 reference라면 이를 무시한다.
+  2. **expr**가 const나 volatile을 수식한다면 이것들도 무시한다.
+
+```cpp
+
+template<typename T>
+void f(T param);
+
+int x = 7;
+const int cx = x;
+const int& crx = x;
+
+f(x);
+// x's type is 'int'
+// neither adorned by reference nor const or volatile 
+// T is deduced to be 'int'
+// ParamType is also deduced to be 'int'
+
+f(cx);
+// cx's type is 'const int',
+// After ignoring 'const', T is deduced to be 'int'
+// ParamType is deduced to be 'int'
+
+f(crx);
+// Ignore both the reference and const adornments
+// T is deduced to be 'int',
+// ParamType is deduced to be 'int'
+
+```
+
+Case 3에서 함수호출과 같이 pass되는 argument들은 함수 내부에서는 함수 외부에서의 object와는 관련없는 새롭게 생성된 copy이기 때문에 함수 내부에서 해당 copy를 변경하더라도 외부에서는 영향을 받지 않는다. 즉, 어차피 애초에 reference로 공유되어지는 object가 아닌 독립적인 copy이기때문에 실수로 내용물을 변경하는 것을 방지하기 위해 일반적으로 사용되는 const 키워드를 굳이 붙이지 않아도된다.
+
+다른 상황으로 함수 호출시 argument가 const object를 가르키는 const pointer타입이면 어떻게 될까? 
+
+참고로, const char* const와 같은 데이터 타입에서 char\*의 앞에 붙은 const는 포인터가 가르키고 있는 object의 내용물을 해당 포인터를 통해서는 변경하지 못하도록 하겠다는 의미이고, char\* 뒤에 붙은 
+
+
+### TODO
+Currently working on case 3
