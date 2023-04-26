@@ -11,7 +11,7 @@ use_math: true
 
 문제: [Cities and States (Silver)](http://www.usaco.org/index.php?page=viewproblem2&cpid=667)
 
-$N (1 \leq N \leq 200000)$개의 city와 state pair가 주어진다. 
+$$N (1 \leq N \leq 200000)$$개의 city와 state pair가 주어진다. 
 
 어떠한 순서쌍들은 아래의 예시에서 처럼 특정조건을 만족하면 special pair라고 부른다.
 
@@ -31,7 +31,7 @@ for (int i = 0; i < N - 1; ++i) {
   }
 }
 ```
-하지만 이 접근은 입력의 크기가 최대 20만임을 고려하면 시간복잡도가 $O(N^2)$이기 때문에 실제로 사용할 수 없다.
+하지만 이 접근은 입력의 크기가 최대 20만임을 고려하면 시간복잡도가 $$O(N^2)$$이기 때문에 실제로 사용할 수 없다.
 
 ### Approach 2
 
@@ -51,13 +51,13 @@ MIAMI2 FL
 
 이 전처리 과정은 map 자료구조를 통해 구현하면 효율적으로 search를 할 수 있다. 
 
-C++의 STL에서 제공하는 std::map의 경우 RB tree기반이기 때문에 search의 시간복잡도가 $O(N \log_2 {N})$이고 std::unordered_map의 경우 Hash기반이기 때문에 search 시간복잡도는 $O(\alpha \cdot 1 )$이나 constant factor인 $\alpha$가 매우 클수도 있어서 상황에따라 Time limit exceed verdict를 받을 수 있기에 사용을 추천하지는 않는다고 한다.
+C++의 STL에서 제공하는 std::map의 경우 RB tree기반이기 때문에 search의 시간복잡도가 $$O(N \log_2 {N})$$이고 std::unordered_map의 경우 Hash기반이기 때문에 search 시간복잡도는 $$O(\alpha \cdot 1 )$$이나 constant factor인 $$\alpha$$가 매우 클수도 있어서 상황에따라 Time limit exceed verdict를 받을 수 있기에 사용을 추천하지는 않는다고 한다.
 
 전처리 과정을 마친 후 각 pair에 대해 special pair를 만들어내는 개수를 각각 누계한다. 
 
 정답은 순서가 중요하지 않기 때문에 바로 앞에서 누계한 값을 반으로 나눈 값이다. 
 
-시간복잡도는 $O(N \log_2(N) \log_2(N))$이므로 $N=200000$인 경우에도 $O(200000 \log_2({200000}) \log_2({200000})) \approx O(61952000)$ 정도로 제한시간내에 충분히 문제를 풀어낼 수 있다.
+시간복잡도는 $$O(N \log_2(N) \log_2(N))$$이므로 $$N=200000$$인 경우에도 $$O(200000 \log_2({200000}) \log_2({200000})) \approx O(61952000)$$ 정도로 제한시간내에 충분히 문제를 풀어낼 수 있다.
 
 #### Implementation
 ```cpp

@@ -57,13 +57,13 @@ use_math: true
 
 ![sleepy cow herding bronze img 4](/assets/image/alg_ds_ps/sleepy_cow_herding_bronze/sleepy_cow_herding_bronze_img_4.png)
 
-위의 예시에서는 오른쪽 소를 고정시키고 왼쪽과 중간소를 번갈아가며 이동시켜 결국에는 세 마리 소들이 인접하게 하였다. 이 과정중에 필요한 이동 횟수는 $d2$번이다. 
+위의 예시에서는 오른쪽 소를 고정시키고 왼쪽과 중간소를 번갈아가며 이동시켜 결국에는 세 마리 소들이 인접하게 하였다. 이 과정중에 필요한 이동 횟수는 $$d2$$번이다. 
 
 즉 최대 이동 횟수는 중간 소를 기준으로 했을때 거리가 먼쪽의 소를 고정시키고 나머지 소들을 위의 아이디어를 따라 움직이면 된다. 
 
 즉, 
 
-$moves_{max} = max(d1, d2)$
+$$moves_{max} = max(d1, d2)$$
 
 #### Implementation
 ```cpp

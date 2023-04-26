@@ -11,7 +11,7 @@ use_math: true
 
 문제: [Bovine Genomics (Bronze)](http://www.usaco.org/index.php?page=viewproblem2&cpid=736)
 
-$N$마리의 spotty 소들과 또 다른 $N$마리의 plain 소들이 존재한다. 각 소들은 길이 $M$의 DNA Sequence 정보를 갖고 있다. 좀 더 자세한 구성은 아래를 보자.
+$$N$$마리의 spotty 소들과 또 다른 $$N$$마리의 plain 소들이 존재한다. 각 소들은 길이 $$M$$의 DNA Sequence 정보를 갖고 있다. 좀 더 자세한 구성은 아래를 보자.
 
 ```txt
 Positions:    1 2 3 4 5 6 7 ... M
@@ -40,7 +40,7 @@ Plain Cow 3:  A C T T C C A ... T
 
 이번에는 문자 C가 양쪽 그룹에 모두 포함되어 있다. 만약 문자 C가 주어진다면 해당 문자를 포함하는 소가 Spotty인지 Plain인지 분류가 불가능한 상황이 생긴다. 즉, 항상 구분할수 없다.
 
-즉, Spotty와 Plain 그룹들간에 전혀 DNA 문자(A, C, G, T)를 공유하고 있지않은 position의 개수를 세면 된다. 시간복잡도는 $O(N * M)$.
+즉, Spotty와 Plain 그룹들간에 전혀 DNA 문자(A, C, G, T)를 공유하고 있지않은 position의 개수를 세면 된다. 시간복잡도는 $$O(N * M)$$.
 
 #### Implementation
 위의 아이디어를 구현하면 아래와 같다.
