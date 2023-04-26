@@ -75,6 +75,7 @@ $$c_{1}=1/14$$, $$c_{2}=1/2$$, $$n_{0}=7$$일때 식 (1)을 만족하는 것을 
 즉, $$f(n)=\frac{1}{2}n^{2}-3n=\Theta(n^2)$$이다.
 
 이를 그래프로 표현하면 아래와 같다.
+
 ![growth of functions img 1](/assets/image/math_for_cs/growth_of_functions/growth_of_functions_img_1.png)
 
 위의 그래프를 보면 $$f_{n}$$이 $$c_{1}g(n)$$과 $$c_{2}g(n)$$사이에 샌드위치처럼 끼여있는 것을 확인 할 수 있다. 
