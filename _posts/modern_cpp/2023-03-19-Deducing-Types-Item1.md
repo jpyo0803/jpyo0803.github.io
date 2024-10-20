@@ -171,7 +171,7 @@ Case 1의 경우 규칙은 생각보다 간단한 것같다. 단순히 reference
 #### Case 2: ParamType이 Universal Reference인 경우
 
 - Rules
-  1. **expr**를 **lvalue**라면 **T** 무조건 **lvalue reference**로 추론된다. **유일**하게 **T**가 reference를 수식한다.
+  1. **expr**를 **lvalue**라면 **T** 무조건 **lvalue reference**로 추론된다. 이 경우에만 **유일**하게 **T**가 reference를 수식한다.
   2. **expr**가 **rvalue**라면 일반적인 규칙을 따른다. 
 
 ```cpp
